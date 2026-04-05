@@ -8,7 +8,7 @@ Run:  streamlit run streamlit_app.py
 """
 
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer
+# from streamlit_webrtc import webrtc_streamer
 import cv2
 import av
 import numpy as np
@@ -24,26 +24,26 @@ from PIL import Image, ImageDraw, ImageFont
 from ultralytics import YOLO
 
 
-# Define a callback to process frames
-def video_frame_callback(frame):
-    img = frame.to_ndarray(format="bgr24")
+# # Define a callback to process frames
+# def video_frame_callback(frame):
+#     img = frame.to_ndarray(format="bgr24")
     
-    # 1. Run your YOLOv8 detection here
-    # results = model(img) 
+#     # 1. Run your YOLOv8 detection here
+#     # results = model(img) 
     
-    # 2. Annotate the image (draw boxes/labels)
-    # annotated_img = results[0].plot()
+#     # 2. Annotate the image (draw boxes/labels)
+#     # annotated_img = results[0].plot()
 
-    return av.VideoFrame.from_ndarray(img, format="bgr24")
+#     return av.VideoFrame.from_ndarray(img, format="bgr24")
 
-# Place this where you want the camera feed to appear
-webrtc_streamer(
-    key="vocab-camera", 
-    video_frame_callback=video_frame_callback,
-    rtc_configuration={
-        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-    }
-)
+# # Place this where you want the camera feed to appear
+# webrtc_streamer(
+#     key="vocab-camera", 
+#     video_frame_callback=video_frame_callback,
+#     rtc_configuration={
+#         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+#     }
+# )
 
 # ──────────────────────────────────────────────────────────────
 #  Page Configuration
