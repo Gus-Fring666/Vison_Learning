@@ -250,7 +250,7 @@ The original `app.py` desktop version supports these keyboard controls:
 Contributions are welcome! Here are some ideas for improvements:
 
 - 🌍 **Multi-language support** — Translate detected object names into other languages
-- 🎯 **Quiz mode** — Test your knowledge by naming objects before the AI reveals them
+- 🎯 **Quiz mode** — Test your knowledge by naming objects before the AI reveals them	
 - 📊 **Analytics dashboard** — Learning progress over multiple sessions
 - 🔊 **Text-to-speech** — Pronounce detected words aloud
 - 🏷️ **Custom model training** — Train on domain-specific objects (medical, culinary, etc.)
